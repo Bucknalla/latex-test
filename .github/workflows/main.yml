@@ -17,3 +17,5 @@ jobs:
         root_file: root.tex
     - name: GitHub Push PDF
       uses: ad-m/github-push-action@v.0.4.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
