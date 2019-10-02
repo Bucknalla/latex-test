@@ -15,6 +15,7 @@ jobs:
       uses: xu-cheng/latex-action@1.0.5
       with:
         root_file: root.tex
+        args: -pdflatex="pdflatex -jobname main"
     - name: GitHub Push PDF
       uses: ad-m/github-push-action@v.0.4.0
       with:
