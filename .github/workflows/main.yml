@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Building LaTeX project...
+    - name: Github Action for LaTeX
+      uses: xu-cheng/latex-action@1.0.5
+      with:
+        root_file: root.tex
